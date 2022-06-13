@@ -439,3 +439,9 @@ h1 {
     margin: auto;
     margin-bottom: 20px;
 }
+
+@media (max-width: 600px) {
+    #contacto {
+        font-size: 20px;
+    }
+}
