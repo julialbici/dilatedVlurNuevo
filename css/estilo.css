@@ -43,7 +43,7 @@
     width: 100%;
     color: black;
     padding: 5px;
-    -webkit-text-stroke: 0.1px black
+    -webkit-text-stroke: 0.1px black;
 }
 
 
@@ -55,6 +55,7 @@
     border-bottom: 1px solid orange;
     width: 100%;
     height: 100%;
+    
 }
 
 
@@ -78,6 +79,7 @@ a {
     height: 100%;
     width: 100%;
     gap: 10px;
+    margin-bottom: 15 px;
 
 
 
@@ -135,11 +137,6 @@ main {
     height: 100%;
     margin-left: 10px;
 }
-
-
-/* .quienesSomos h2 {
-    font-size: 55px;
-} */
 
 
 footer div ul li a {
@@ -236,28 +233,6 @@ main {
     margin: auto;
 }
 
-/* 
-.quienesSomos p {
-    grid-area: quienesSomos;
-    margin: auto;
-    font-family: 'Comfortaa', cursive;
-    font-size: 37px;
-    text-align: center;
-}
-
-.quienesSomos h2 {
-    color: orange;
-    text-align: center;
-    font-size: 33 px;
-
-}
-
-.quienesSomos {
-    border: 5px solid orange;
-    border-radius: 20px;
-    box-shadow: 1px 1px 1px 1px;
-    width: 50%;
-} */
 
 .quienesSomos {
     display: flex;
@@ -432,3 +407,35 @@ h1 {
 
 }
 
+
+#contacto {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    font-family: 'Roboto', sans-serif;
+    color: orange;
+    font-size: 50px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50vw;
+}
+
+.campo {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.tamBotonForm {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
