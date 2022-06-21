@@ -1,447 +1,277 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&family=Roboto:wght@300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
-
-
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&family=Roboto:wght@300&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap";
+@keyframes texto {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100%; } }
 
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 .botonWhatsApp img {
-    width: 50px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-
-.envioGratis {
-    background-color: black;
-    color: beige;
-    font-size: smaller;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    border-bottom: solid 2px orange;
-    width: 100%;
-    height: 100%;
-
-}
-
-
-.tituloPrincipal {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 7rem;
-    font-style: italic;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    color: black;
-    padding: 5px;
-    -webkit-text-stroke: 0.1px black;
-}
-
-
-.fondoPrincipal {
-    background-size: cover;
-    /* background-image: url(../fotos/adsasd.avif); */
-    background-image: url(../fotos/photo-1509983165097-0c31a863e3f3.avif);
-    /* background-image: url(../fotos/photo-1514949823529-bdcc933a9339.avif); */
-    border-bottom: 1px solid orange;
-    width: 100%;
-    height: 100%;
-    
-}
-
-
-li {
-    list-style-type: none;
-}
-
-
-a {
-    text-decoration: none;
-}
-
+  width: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
 
 .textoIndice {
-    font-family: 'Comfortaa', cursive;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 25px;
-    height: 100%;
-    width: 100%;
-    gap: 10px;
-    margin-bottom: 15 px;
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 25px;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 15 px; }
 
+.colorInicio {
+  color: orange;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold; }
 
-
-}
-
-.colorInicio, div ul li a {
-    color: orange;
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
-
-}
-
-
-.dondeEstamos, .productosDestacados {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    border: 1px orange solid;
-    border-radius: 7px;
-    background-color: black;
-    color: orange;
-    height: 130%;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    box-shadow: 1px 1px 10px;
-    margin-left: 25px;
-}
-
-
-
-main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 23px;
-    width: 100%;
-    height: 100%;
-}
-
-
-.precio {
-    color: green;
-}
-
-
-.ultimaInfo {
-
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-left: 10px;
-}
-
-
-footer div ul li a {
-    color: orange;
-}
-
-
-footer p {
-    font-family: 'Comfortaa', cursive;
-
-}
-
-
-
-footer div ul li {
-    display: inline-block;
-    height: 100%;
-    padding: 10px 10px 10px 10px;
-
-}
-
-
-
-footer {
-    background-color: black;
-    color: whitesmoke;
-    padding: 20px 20px 0px 20px;
-    text-align: center;
-    border-top: 2px orange solid;
-    width: 100%;
-    height: 100%;
-
-}
-
-
-
-
-.bodyIndex {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    grid-template-areas:
-        "header header header"
-        "prodDestacado prodDestacado prodDestacado"
-        "main main main"
-        "ultimaInfo ultimaInfo ultimaInfo"
-        "dondeEstamos dondeEstamos dondeEstamos"
-        "mapa native native"
-        "footer footer footer";
-
-    gap: 50px;
-}
-
-
-header {
-    grid-area: header;
-    background-color: red;
-}
-
-
-.productosDestacados {
-    grid-area: prodDestacado;
-}
-
-
-main {
-    grid-area: main;
-
-}
-
-
-.ultimaInfo {
-    grid-area: ultimaInfo;
-    margin-left: 10px;
-    text-align: center;
-}
-
+div ul li a {
+  color: orange;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold; }
+  div ul li a:hover {
+    color: black; }
 
 .dondeEstamos {
-    grid-area: dondeEstamos;
-}
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border: 1px orange solid;
+  border-radius: 7px;
+  background-color: black;
+  color: orange;
+  height: 130%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  box-shadow: 1px 1px 10px;
+  margin-left: 25px;
+  grid-area: dondeEstamos; }
 
+.productosDestacados {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border: 1px orange solid;
+  border-radius: 7px;
+  background-color: black;
+  color: orange;
+  height: 130%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  box-shadow: 1px 1px 10px;
+  margin-left: 25px;
+  grid-area: prodDestacado; }
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 23px;
+  width: 100%;
+  height: 100%;
+  grid-area: main; }
+  main div img:hover {
+    height: 375px; }
+
+.precio {
+  color: green; }
+
+.ultimaInfo {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 10px;
+  grid-area: ultimaInfo;
+  margin-left: 10px;
+  text-align: center; }
+
+footer {
+  background-color: black;
+  color: whitesmoke;
+  padding: 20px 20px 0px 20px;
+  text-align: center;
+  border-top: 2px orange solid;
+  width: 100%;
+  height: 100%; }
+  footer div ul li {
+    display: inline-block;
+    height: 100%;
+    padding: 10px 10px 10px 10px; }
+    footer div ul li a {
+      color: orange; }
+  footer p {
+    font-family: "Comfortaa", cursive; }
+
+.bodyIndex {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: "header header header" "prodDestacado prodDestacado prodDestacado" "main main main" "ultimaInfo ultimaInfo ultimaInfo" "dondeEstamos dondeEstamos dondeEstamos" "mapa native native" "footer footer footer";
+  gap: 50px; }
+
+header {
+  grid-area: header;
+  background-color: red; }
 
 .mapa {
-    grid-area: mapa;
-    margin: auto;
-}
-
+  grid-area: mapa;
+  margin: auto; }
 
 .native {
-    grid-area: native;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
+  grid-area: native;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: orange; }
 
 .quienesSomos {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-}
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly; }
 
 .footer {
-    grid-area: footer;
-}
-
-
+  grid-area: footer; }
 
 .regalaGiftCards {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    border: 1px orange solid;
-    border-radius: 7px;
-    background-color: black;
-    color: orange;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    grid-area: regalaGift;
-    box-shadow: 1px 1px 10px;
-    margin-left: 25px;
-    width: 100%;
-    height: 130%;
-}
-
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border: 1px orange solid;
+  border-radius: 7px;
+  background-color: black;
+  color: orange;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  grid-area: regalaGift;
+  box-shadow: 1px 1px 10px;
+  margin-left: 25px;
+  width: 100%;
+  height: 130%; }
 
 .mainGiftCards {
-    grid-area: mainGiftCards;
-}
+  grid-area: mainGiftCards; }
 
 .lastSection {
-    grid-area: lastSection;
-    margin-left: 10px;
-}
-
+  grid-area: lastSection;
+  margin-left: 10px; }
 
 .bodyGiftCards {
-
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    grid-template-areas:
-        "header header header"
-        "regalaGift regalaGift regalaGift"
-        "mainGiftCards mainGiftCards mainGiftCards"
-        "lastSection lastSection lastSection "
-        "footer footer footer";
-
-    gap: 50px;
-}
-
-
-@media (max-width: 600px) {
-
-    .bodyIndex {
-
-        display: grid;
-        grid-template-areas:
-            "header"
-            "header"
-            "prodDestacado"
-            "main"
-            "ultimaInfo"
-            "dondeEstamos"
-            "mapa"
-            "native"
-            "footer";
-
-        gap: 50px;
-    }
-
-    .botonWhatsApp {
-        display: none;
-    }
-
-
-    .quienesSomos {
-        display: none;
-    }
-
-
-    .native {
-        display: none;
-    }
-
-    .footer {
-
-        max-width: 90%;
-    }
-
-
-}
-
-@media (max-width: 600px) {
-
-    .bodyGiftCards {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "regalaGift"
-            "mainGiftCards"
-            "lastSection"
-            "footer";
-    }
-
- 
-}
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: "header header header" "regalaGift regalaGift regalaGift" "mainGiftCards mainGiftCards mainGiftCards" "lastSection lastSection lastSection " "footer footer footer";
+  gap: 50px; }
 
 .bodyGeneral {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    grid-template-areas:
-        "header header header"
-        "prodDestacado prodDestacado prodDestacado"
-        "main main main"
-        "ultimaInfo ultimaInfo ultimaInfo"
-        "footer footer footer";
-
-    gap: 50px;
-}
-
-@media (max-width: 600px) {
-
-    .bodyGeneral {
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "prodDestacado"
-        "main"
-        "ultimaInfo"
-        "footer";
-    }
-
-
-}
-
-
-div ul li a:hover {
-    color: black;
-}
-
-
-main div img:hover {
-    height: 375px;
-
-}
-
-@keyframes texto {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: "header header header" "prodDestacado prodDestacado prodDestacado" "main main main" "ultimaInfo ultimaInfo ultimaInfo" "footer footer footer";
+  gap: 50px; }
 
 h1 {
-    animation-name: texto;
-    animation-duration: 4s;
-    animation-iteration-count: inherit;
-}
-
-.native {
-    background-color: orange;
-
-}
-
+  animation-name: texto;
+  animation-duration: 4s;
+  animation-iteration-count: inherit; }
 
 #contacto {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid black;
-    font-family: 'Roboto', sans-serif;
-    color: orange;
-    font-size: 50px;
-}
-
-#contacto form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  font-family: "Roboto", sans-serif;
+  color: orange;
+  font-size: 50px; }
+  #contacto form {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 50vw;
-}
+    width: 50vw; }
 
 .campo {
-    display: block;
-    width: 50%;
-    padding: 10px;
-    margin: 10px auto;
-}
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto; }
 
 .tamBotonForm {
-    width: 200px;
-    margin: auto;
-    margin-bottom: 20px;
-}
+  width: 200px;
+  margin: auto;
+  margin-bottom: 20px; }
 
 @media (max-width: 600px) {
-    #contacto {
-        font-size: 20px;
-    }
-}
+  .bodyIndex {
+    display: grid;
+    grid-template-areas: "header" "header" "prodDestacado" "main" "ultimaInfo" "dondeEstamos" "mapa" "native" "footer";
+    gap: 50px; }
+  .botonWhatsApp {
+    display: none; }
+  .quienesSomos {
+    display: none; }
+  .native {
+    display: none; }
+  .footer {
+    max-width: 90%; }
+  .bodyGiftCards {
+    display: grid;
+    grid-template-areas: "header" "regalaGift" "mainGiftCards" "lastSection" "footer"; }
+  .bodyGeneral {
+    display: grid;
+    grid-template-areas: "header" "prodDestacado" "main" "ultimaInfo" "footer"; }
+  #contacto {
+    font-size: 20px; }
+  h1 {
+    font-size: 4px; } }
+
+.envioGratis {
+  background-color: black;
+  color: beige;
+  font-size: smaller;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-bottom: solid 2px orange;
+  width: 100%;
+  height: 100%; }
+
+.tituloPrincipal {
+  font-family: "Bebas Neue", cursive;
+  font-size: 7rem;
+  font-style: italic;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: black;
+  padding: 5px;
+  -webkit-text-stroke: 0.1px black; }
+
+.fondoPrincipal {
+  background-size: cover;
+  background-image: url(../fotos/photo-1509983165097-0c31a863e3f3.avif);
+  border-bottom: 1px solid orange;
+  width: 100%;
+  height: 100%; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
