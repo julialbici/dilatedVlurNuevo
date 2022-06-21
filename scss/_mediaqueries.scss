@@ -1,0 +1,33 @@
+@media (max-width: 600px) {
+	.bodyIndex {
+		display: grid;
+		grid-template-areas: "header" "header" "prodDestacado" "main" "ultimaInfo" "dondeEstamos" "mapa" "native" "footer";
+		gap: 50px;
+	}
+	.botonWhatsApp {
+		display: none;
+	}
+	.quienesSomos {
+		display: none;
+	}
+	.native {
+		display: none;
+	}
+	.footer {
+		max-width: 90%;
+	}
+	.bodyGiftCards {
+		display: grid;
+		grid-template-areas: "header" "regalaGift" "mainGiftCards" "lastSection" "footer";
+	}
+	.bodyGeneral {
+		display: grid;
+		grid-template-areas: "header" "prodDestacado" "main" "ultimaInfo" "footer";
+	}
+	#contacto {
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 4px;
+	}
+}

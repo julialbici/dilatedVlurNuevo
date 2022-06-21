@@ -53,3 +53,23 @@ a {
 	font-family: $font-family_3;
 	font-weight: bold;
 }
+
+div {
+	ul {
+		li {
+			a {
+				color: $color_3;
+				font-family: $font-family_3;
+				font-weight: bold;
+				&:hover {
+					color: $color_2;
+				}
+			}
+		}
+	}
+}
+
+header {
+	grid-area: header;
+	background-color: $background-color_2;
+}
